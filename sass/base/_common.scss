@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $main-font;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
+button {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.title {
+  margin-top: 0;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+
+  @media screen and(max-width: 1199px) {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.178;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.178;
+  }
+}
+
+.bro {
+  border: 1px solid orange;
+}
+
+.brg {
+  border: 1px solid green;
+}
+
+.nav__link.active {
+  color: $accent-color;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1140;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}

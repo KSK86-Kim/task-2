@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Bottle Ua</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="nav">
+          <a href="" class="logo">
+            Bottle ua
+          </a>
+          <ul>
+            <li class="item"><a href="" class="link">Тованы</a></li>
+            <li class="item"><a href="" class="link">Преимущества</a></li>
+            <li class="item"><a href="" class="link">О нас</a></li>
+            <li class="item"><a href="" class="link">Вопросы</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <svg class="menu__svg" width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-menu-close" href="./images/sprite.svg#icon-menu-close"></use>
+            <use class="icon-menu-open" href="./images/sprite.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <!-- <section class="hero__section">
+        <div class="container hero__container">
+          <h1 class="hero__title">
+            Сохраните природу вместе с Bottle Ua
+          </h1>
+          <p class="hero__subject">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+            efficitur est lacus. Aenean id risus posuere, tincidunt diam id,
+            consectetur neque. Cras in consequat ex. Vestibulum finibus metus
+            non lorem elementum molestie. Fusce suscipit ex id blandit
+            imperdiet. Morbi non pellentesque lorem, in imperdiet dolor.
+          </p>
+          <button type="button">Купить</button>
+          <a href="" class="hero__link">Узнать больше</a>
+          <ul class="hero__list list"></ul>
+          <li class="hero__item">
+            <svg width="18px" height="21px">
+              <use href="./images/sprite.svg#icon-"></use>
+            </svg>
+            <p class="hero__decription">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              efficitur est lacus. Aenean id risus posuere, tincidunt diam id,
+              consectetur neque
+            </p>
+          </li>
+          <li class="hero__item">
+            s
+            <svg width="18px" height="21px">
+              <use href="./images/sprite.svg#icon-"></use>
+            </svg>
+            <p class="hero__decription">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              efficitur est lacus. Aenean id risus posuere, tincidunt diam id,
+              consectetur neque
+            </p>
+          </li>
+          <li class="hero__item">
+            <svg width="18px" height="21px">
+              <use href="./images/sprite.svg#icon-"></use>
+            </svg>
+            <p class="hero__decription">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              efficitur est lacus. Aenean id risus posuere, tincidunt diam id,
+              consectetur neque
+            </p>
+          </li>
+        </div>
+      </section> -->
+      <!-- <section class="project__section">
+        <div class="container project__container">
+          <h2 class="project__title">
+            Наши проекти
+          </h2>
+          <ul class="project__list list">
+            <li class="project__item">
+              <div>
+                <img src="" alt="Бутылка таблетница" />
+              </div>
+              <div>
+                <h3 class="project__subject">Бутылка таблетница</h3>
+                <p class="project__decription">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  efficitur est lacus. Aenean id risus posuere, tincidunt diam
+                  id, consectetur neque. Cras in consequat ex. Vestibulum
+                  finibus metus non lorem elementum molestie.
+                </p>
+                <p class="project__price js-project__price">000 грн</p>
+                <button type="button" class="project__btn">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Купить
+                  </div>
+                </button>
+                <button type="button" class="project__btn--active">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Посмотреть фото
+                  </div>
+                </button>
+              </div>
+            </li>
+            <li class="project__item">
+              <div>
+                <img src="" alt="Бутылка А5" />
+              </div>
+              <div>
+                <h3 class="project__subject">Бутылка А5</h3>
+                <p class="project__decription">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  efficitur est lacus. Aenean id risus posuere, tincidunt diam
+                  id, consectetur neque. Cras in consequat ex. Vestibulum
+                  finibus metus non lorem elementum molestie.
+                </p>
+                <p class="project__price js-project__price">000 грн</p>
+                <button type="button" class="project__btn">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Купить
+                  </div>
+                </button>
+                <button type="button" class="project__btn--active">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Посмотреть фото
+                  </div>
+                </button>
+              </div>
+            </li>
+            <li class="project__item">
+              <div>
+                <img src="" alt="Умный термос" />
+              </div>
+              <div>
+                <h3 class="project__subject">Умный термос</h3>
+                <p class="project__decription">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  efficitur est lacus. Aenean id risus posuere, tincidunt diam
+                  id, consectetur neque. Cras in consequat ex. Vestibulum
+                  finibus metus non lorem elementum molestie.
+                </p>
+                <p class="project__price js-project__price">000 грн</p>
+                <button type="button" class="project__btn">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Купить
+                  </div>
+                </button>
+                <button type="button" class="project__btn--active">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Посмотреть фото
+                  </div>
+                </button>
+              </div>
+            </li>
+            <li class="project__item">
+              <div>
+                <img src="" alt="Умный термос" />
+              </div>
+              <div>
+                <h3 class="project__subject">Умный термос</h3>
+                <p class="project__decription">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  efficitur est lacus. Aenean id risus posuere, tincidunt diam
+                  id, consectetur neque. Cras in consequat ex. Vestibulum
+                  finibus metus non lorem elementum molestie.
+                </p>
+                <p class="project__price js-project__price">000 грн</p>
+                <button type="button" class="project__btn">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Купить
+                  </div>
+                </button>
+                <button type="button" class="project__btn--active">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Посмотреть фото
+                  </div>
+                </button>
+              </div>
+            </li>
+            <li class="project__item">
+              <div>
+                <img src="" alt="Умный термос" />
+              </div>
+              <div>
+                <h3 class="project__subject">Умный термос</h3>
+                <p class="project__decription">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  efficitur est lacus. Aenean id risus posuere, tincidunt diam
+                  id, consectetur neque. Cras in consequat ex. Vestibulum
+                  finibus metus non lorem elementum molestie.
+                </p>
+                <p class="project__price js-project__price">000 грн</p>
+                <button type="button" class="project__btn">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Купить
+                  </div>
+                </button>
+                <button type="button" class="project__btn--active">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Посмотреть фото
+                  </div>
+                </button>
+              </div>
+            </li>
+            <li class="project__item">
+              <div>
+                <img src="" alt="Спортивная бутылка" />
+              </div>
+              <div>
+                <h3 class="project__subject">Спортивная бутылка</h3>
+                <p class="project__decription">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  efficitur est lacus. Aenean id risus posuere, tincidunt diam
+                  id, consectetur neque. Cras in consequat ex. Vestibulum
+                  finibus metus non lorem elementum molestie.
+                </p>
+                <p class="project__price js-project__price">000 грн</p>
+                <button type="button" class="project__btn">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Купить
+                  </div>
+                </button>
+                <button type="button" class="project__btn--active">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Посмотреть фото
+                  </div>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section> -->
+
+      <!-- <section class="advantages__section">
+        <div class="container advantages__container">
+          <h2 class="advantages__title">
+            Наши примущество
+          </h2>
+          <ul class="advantages__list list">
+            <li class="advantages__item">
+              <h3>Примущества №</h3>
+              <p class="advantages__decription"></p>
+            </li>
+            <li class="advantages__item">
+              <h3>Примущества №</h3>
+              <p class="advantages__decription"></p>
+            </li>
+            <li class="advantages__item">
+              <h3>Примущества №</h3>
+              <p class="advantages__decription"></p>
+            </li>
+            <li class="advantages__item">
+              <
+              <h3>Примущества №</h3>
+              <p class="advantages__decription"></p>
+              /li>
+            </li>
+          </ul>
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+      </section> -->
+      <!-- <section class="hero__section">
+        <div class="container hero__container">
+          <div>
+            <h2 class="hero__title">Немного поговорим о нашем магазине</h2>
+            <p class="hero__decription">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              efficitur est lacus. Aenean id risus posuere, tincidunt diam id,
+              consectetur neque. Cras in consequat ex. Vestibulum finibus metus
+              non lorem elementum molestie.
+            </p>
+          </div>
+          <div>
+            <ul class="somethink__list list">
+              <li class="somethink__item">
+                <svg width="18px" height="21px">
+                  <use href="./images/sprite.svg#icon-"></use>
+                </svg>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  efficitur est lacus. Aenean id risus posuere, tincidunt diam
+                  id, consectetur neque
+                </p>
+              </li>
+              <li class="somethink__item">
+                <svg width="18px" height="21px">
+                  <use href="./images/sprite.svg#icon-"></use>
+                </svg>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  efficitur est lacus. Aenean id risus posuere, tincidunt diam
+                  id, consectetur neque
+                </p>
+              </li>
+              <li class="somethink__item">
+                <svg width="18px" height="21px">
+                  <use href="./images/sprite.svg#icon-"></use>
+                </svg>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  efficitur est lacus. Aenean id risus posuere, tincidunt diam
+                  id, consectetur neque
+                </p>
+              </li>
+              <li class="somethink__item">
+                <svg width="18px" height="21px">
+                  <use href="./images/sprite.svg#icon-"></use>
+                </svg>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  efficitur est lacus. Aenean id risus posuere, tincidunt diam
+                  id, consectetur neque
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section> -->
+      <!-- <section class="`qut__section">
+        <div class="container qut__container">
+          <h2 class="qut__title">
+            Часто задаваемые <span class="active">вопросы</span>
+          </h2>
+          <ul class="qut__list">
+            <li class="qut__item">
+              <div>
+                <h3 class="qut__subject">Каковы правила возврата товара?</h3>
+                <svg width="18px" height="21px">
+                  <use href="./images/sprite.svg#icon-"></use>
+                </svg>
+              </div>
+              <p class="decription"></p>
+            </li>
+            <li class="qut__item">
+              <div>
+                <h3 class="qut__subject">Каковы правила возврата товара?</h3>
+                <svg width="18px" height="21px">
+                  <use href="./images/sprite.svg#icon-"></use>
+                </svg>
+              </div>
+              <p class="decription"></p>
+            </li>
+            <li class="qut__item">
+              <div>
+                <h3 class="qut__subject">Каковы правила возврата товара?</h3>
+                <svg width="18px" height="21px">
+                  <use href="./images/sprite.svg#icon-"></use>
+                </svg>
+              </div>
+              <p class="decription"></p>
+            </li>
+            <li class="qut__item">
+              <div>
+                <h3 class="qut__subject">Каковы правила возврата товара?</h3>
+                <svg width="18px" height="21px">
+                  <use href="./images/sprite.svg#icon-"></use>
+                </svg>
+              </div>
+              <p class="decription"></p>
+            </li>
+          </ul>
+        </div>
+      </section> -->
+
+      <!-- <section class="hero__section">
+        <div class="container hero__container">
+          <h2 class="order__title">
+            Готовы сделать заказ?
+          </h2>
+          <ul class="project__list list">
+            <li class="project__item">
+              <div>
+                <img src="" alt="Бутылка таблетница" />
+              </div>
+              <div>
+                <h3 class="project__subject">Бутылка таблетница</h3>
+                <p class="project__decription">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  efficitur est lacus. Aenean id risus posuere, tincidunt diam
+                  id, consectetur neque. Cras in consequat ex. Vestibulum
+                  finibus metus non lorem elementum molestie.
+                </p>
+                <p class="project__price js-project__price">000 грн</p>
+                <button type="button" class="project__btn">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Купить
+                  </div>
+                </button>
+                <button type="button" class="project__btn--active">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Посмотреть фото
+                  </div>
+                </button>
+              </div>
+            </li>
+            <li class="project__item">
+              <div>
+                <img src="" alt="Бутылка А5" />
+              </div>
+              <div>
+                <h3 class="project__subject">Бутылка А5</h3>
+                <p class="project__decription">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  efficitur est lacus. Aenean id risus posuere, tincidunt diam
+                  id, consectetur neque. Cras in consequat ex. Vestibulum
+                  finibus metus non lorem elementum molestie.
+                </p>
+                <p class="project__price js-project__price">000 грн</p>
+                <button type="button" class="project__btn">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Купить
+                  </div>
+                </button>
+                <button type="button" class="project__btn--active">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Посмотреть фото
+                  </div>
+                </button>
+              </div>
+            </li>
+            <li class="project__item">
+              <div>
+                <img src="" alt="Умный термос" />
+              </div>
+              <div>
+                <h3 class="project__subject">Умный термос</h3>
+                <p class="project__decription">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  efficitur est lacus. Aenean id risus posuere, tincidunt diam
+                  id, consectetur neque. Cras in consequat ex. Vestibulum
+                  finibus metus non lorem elementum molestie.
+                </p>
+                <p class="project__price js-project__price">000 грн</p>
+                <button type="button" class="project__btn">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Купить
+                  </div>
+                </button>
+                <button type="button" class="project__btn--active">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Посмотреть фото
+                  </div>
+                </button>
+              </div>
+            </li>
+            <li class="project__item">
+              <div>
+                <img src="" alt="Умный термос" />
+              </div>
+              <div>
+                <h3 class="project__subject">Умный термос</h3>
+                <p class="project__decription">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  efficitur est lacus. Aenean id risus posuere, tincidunt diam
+                  id, consectetur neque. Cras in consequat ex. Vestibulum
+                  finibus metus non lorem elementum molestie.
+                </p>
+                <p class="project__price js-project__price">000 грн</p>
+                <button type="button" class="project__btn">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Купить
+                  </div>
+                </button>
+                <button type="button" class="project__btn--active">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Посмотреть фото
+                  </div>
+                </button>
+              </div>
+            </li>
+            <li class="project__item">
+              <div>
+                <img src="" alt="Умный термос" />
+              </div>
+              <div>
+                <h3 class="project__subject">Умный термос</h3>
+                <p class="project__decription">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  efficitur est lacus. Aenean id risus posuere, tincidunt diam
+                  id, consectetur neque. Cras in consequat ex. Vestibulum
+                  finibus metus non lorem elementum molestie.
+                </p>
+                <p class="project__price js-project__price">000 грн</p>
+                <button type="button" class="project__btn">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Купить
+                  </div>
+                </button>
+                <button type="button" class="project__btn--active">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Посмотреть фото
+                  </div>
+                </button>
+              </div>
+            </li>
+            <li class="project__item">
+              <div>
+                <img src="" alt="Спортивная бутылка" />
+              </div>
+              <div>
+                <h3 class="project__subject">Спортивная бутылка</h3>
+                <p class="project__decription">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  efficitur est lacus. Aenean id risus posuere, tincidunt diam
+                  id, consectetur neque. Cras in consequat ex. Vestibulum
+                  finibus metus non lorem elementum molestie.
+                </p>
+                <p class="project__price js-project__price">000 грн</p>
+                <button type="button" class="project__btn">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Купить
+                  </div>
+                </button>
+                <button type="button" class="project__btn--active">
+                  <div class="project__icon">
+                    <svg width="18px" height="21px">
+                      <use href="./images/sprite.svg#icon-"></use>
+                    </svg>
+                    Посмотреть фото
+                  </div>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section> -->
+    </main>
+    <!-- <footer class="footer">
+      <a href="">Bottle ua</a>
+      <ul class="footer__list list">
+        <li class="footer__item">Товары</li>
+        <li class="footer__item">Преимущества</li>
+        <li class="footer__item">О нас</li>
+        <li class="footer__item">Вопросы</li>
+      </ul>
+    </footer> -->
+  </body>
+</html>

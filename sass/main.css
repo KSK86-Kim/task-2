@@ -1,0 +1,117 @@
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: "Open Sans", sans-serif;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
+button {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.title {
+  margin-top: 0;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1199px) {
+  .title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.178;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.178;
+  }
+}
+
+.bro {
+  border: 1px solid orange;
+}
+
+.brg {
+  border: 1px solid green;
+}
+
+.nav__link.active {
+  color: #18a0fb;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  padding: 15px;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
