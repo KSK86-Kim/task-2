@@ -10,8 +10,9 @@ html {
 }
 
 body {
-  color: $main-font;
-  font-family: Roboto, sans-serif;
+  color: #000000;
+  background-color: #f8f8f8;
+  font-family: 'PT Serif', serif;
   font-style: normal;
 }
 
@@ -27,31 +28,17 @@ button:hover {
   cursor: pointer;
 }
 
+svg {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
 
 .link {
   text-decoration: none;
-}
-
-.title {
-  margin-top: 0;
-  text-align: center;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-
-  @media screen and(max-width: 1199px) {
-    margin-bottom: 30px;
-    font-size: 28px;
-    line-height: 1.178;
-  }
-
-  @media screen and(min-width: 1200px) {
-    margin-bottom: 30px;
-    font-size: 28px;
-    line-height: 1.178;
-  }
+  // text-decoration: underline;
 }
 
 .bro {
@@ -76,12 +63,14 @@ button:hover {
 
 .container {
   margin: 0 auto;
-  @media screen and (max-width: 767px) {
+  // width: 400px;
+  @media screen and (max-width: 1199px) {
+    // width: 100%;
     padding-right: 25px;
     padding-left: 25px;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 1140;
+    width: 1140px;
     padding-right: 30px;
     padding-left: 30px;
   }

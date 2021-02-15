@@ -10,32 +10,55 @@
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
     <title>Bottle Ua</title>
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
-        <nav class="nav">
-          <a href="" class="logo">
-            Bottle ua
-          </a>
-          <ul>
-            <li class="item"><a href="" class="link">Тованы</a></li>
-            <li class="item"><a href="" class="link">Преимущества</a></li>
-            <li class="item"><a href="" class="link">О нас</a></li>
-            <li class="item"><a href="" class="link">Вопросы</a></li>
-          </ul>
-        </nav>
-        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-          <svg class="menu__svg" width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="icon-menu-close" href="./images/sprite.svg#icon-menu-close"></use>
-            <use class="icon-menu-open" href="./images/sprite.svg#icon-menu-open"></use>
+        <a href="" class="logo"> Bottle ua </a>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class="menu__svg"
+            width="53"
+            height="53"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-menu-close"
+              href="./images/sprite.svg#icon-menu-close"
+            ></use>
+            <use
+              class="icon-menu-open"
+              href="./images/sprite.svg#icon-menu-open"
+            ></use>
           </svg>
         </button>
+        <nav class="header__nav" id="menu-container" data-menu>
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a href="" class="nav__link link">Тованы</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link link">Преимущества</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link link">О нас</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link link">Вопросы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="main">
@@ -620,5 +643,7 @@
         <li class="footer__item">Вопросы</li>
       </ul>
     </footer> -->
+    <script src="./js/menu.js" type="module"></script>
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>
