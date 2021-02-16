@@ -52,7 +52,9 @@ svg {
 .nav__link.active {
   color: $accent-color;
 }
-
+.accent {
+  color: $accent-color;
+}
 .wrapper {
   display: flex;
   justify-content: center;
@@ -62,6 +64,20 @@ svg {
 }
 
 .container {
+  margin: 0 auto;
+  // width: 400px;
+  @media screen and (max-width: 1199px) {
+    // width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1140px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+.qwe {
   margin: 0 auto;
   // width: 400px;
   @media screen and (max-width: 1199px) {

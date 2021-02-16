@@ -61,7 +61,11 @@ svg {
 }
 
 .nav__link.active {
-  color: #18a0fb;
+  color: #0055f8;
+}
+
+.accent {
+  color: #0055f8;
 }
 
 .wrapper {
@@ -91,6 +95,25 @@ svg {
 
 @media screen and (min-width: 1200px) {
   .container {
+    width: 1140px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.qwe {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .qwe {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .qwe {
     width: 1140px;
     padding-right: 30px;
     padding-left: 30px;
@@ -129,7 +152,7 @@ svg {
 @media screen and (min-width: 1200px) {
   .header {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
   }
 }
 
@@ -257,5 +280,218 @@ svg {
 
 .nav__link:hover, .nav__link:focus {
   color: rgba(219, 51, 0, 0.616);
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__section {
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+}
+
+.hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.hero__img {
+  margin: 0 auto;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero__content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+  }
+}
+
+.hero__title {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 60px;
+    line-height: 1.08;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    font-size: 40px;
+    line-height: 1;
+  }
+}
+
+.hero__decription {
+  margin-bottom: 30px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__decription {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__decription {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+.hero__link {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.45;
+  color: #0055f8;
+  border: 3px solid #0055f8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 500px;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__link {
+    display: block;
+    max-width: 265px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__link {
+    display: inline-block;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}
+
+.hero__btn {
+  padding-left: 63px;
+  padding-right: 63px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.45;
+  color: #ffffff;
+  border: none;
+  background: #0055f8;
+  border-radius: 500px;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__btn {
+    margin-bottom: 13px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__btn {
+    margin-right: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}
+
+.hero__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hero__item {
+  max-width: calc(50% - 15px);
+}
+
+.hero__item:not(:nth-child(2n)) {
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__item > svg {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__item > svg {
+    margin-bottom: 20px;
+  }
+}
+
+.hero__summary {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__summary {
+    font-size: 13px;
+    line-height: 1.15;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__summary {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hero-btn__wrapper {
+    margin-bottom: 38px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-btn__wrapper {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .picture__photo {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
