@@ -10,6 +10,13 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+  @media screen and(min-width:1200px) {
+    width: 1160px;
+    padding-top: 92px;
+    padding-bottom: 76px;
+    padding-left: 100px;
+    padding-right: 112px;
+  }
 }
 
 .modal-form {
@@ -59,7 +66,7 @@
   }
   &__title {
     font-weight: 700;
-    @media screen and(max-width:1199px) {
+    @media screen and(max-width:767px) {
       font-size: 25px;
       line-height: 0.8;
       position: absolute;
@@ -73,7 +80,8 @@
       font-size: 20px;
       line-height: 0.8;
     }
-    @media screen and(min-width:1200px) {
+    @media screen and(min-width:768px) {
+      margin-bottom: 40px;
       font-size: 30px;
       line-height: 0.6;
     }
@@ -85,8 +93,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media screen and(max-width:420px) {
+    @media screen and(max-width:419px) {
       flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    @media screen and(min-width:420px) {
+      margin-bottom: 20px;
     }
 
     &--left {
@@ -125,5 +137,28 @@
     & > svg {
       fill: #000000;
     }
+  }
+}
+
+.btn-modal-form__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  color: #ffffff;
+
+  border: none;
+  background-color: #0055f8;
+
+  @media screen and(max-width:767px) {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  @media screen and(min-width:768px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }

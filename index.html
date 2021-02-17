@@ -179,7 +179,11 @@
                   finibus metus non lorem elementum molestie.
                 </p>
                 <p class="project__price js-project__price">000 грн</p>
-                <button type="button" class="project__btn project__btn--btn">
+                <button
+                  type="button"
+                  class="project__btn project__btn--btn"
+                  data-action="buy"
+                >
                   <div class="project__icon">
                     <svg width="20px" height="20px">
                       <use href="./images/sprite.svg#icon-buy"></use>
@@ -856,7 +860,7 @@
         </ul>
       </div>
     </footer>
-
+    <!-- is-hidden -->
     <div class="backdrop is-hidden">
       <div class="wrapper">
         <div class="modal">
@@ -921,14 +925,14 @@
               </div>
             </div>
 
-            <button type="button"></button>
+            <button type="submit" class="btn-modal-form__btn">Заказать</button>
           </form>
         </div>
       </div>
     </div>
 
     <script src="./js/menu.js" type="module"></script>
-    <script src="./js/modal.js" type="module"></script>
     <script src="./js/getUp.js" type="module"></script>
+    <!-- <script src="./js/modal.js" type="module"></script> -->
   </body>
 </html>
