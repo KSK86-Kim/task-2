@@ -1101,7 +1101,7 @@ svg {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .order__section {
     padding-top: 100px;
     padding-bottom: 100px;
