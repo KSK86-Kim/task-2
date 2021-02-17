@@ -856,6 +856,77 @@
         </ul>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden">
+      <div class="wrapper">
+        <div class="modal">
+          <button type="button" class="modal-form-close__btn">
+            <svg width="20px" height="20px">
+              <use href="./images/sprite.svg#icon-modal-close"></use>
+            </svg>
+          </button>
+          <img src="" alt="" />
+          <form action="#" class="modal-form">
+            <h2 class="modal-form__title">Оформление заказа</h2>
+            <input
+              type="text"
+              class="modal-form__input"
+              placeholder="ФИО"
+              required
+              name="user-name"
+              minlength="2"
+              maxlength="20"
+            />
+            <input
+              type="text"
+              class="modal-form__input"
+              placeholder="Номер телефона"
+              required
+              name="user-phone"
+              minlength="2"
+              maxlength="20"
+            />
+            <input
+              type="text"
+              class="modal-form__input"
+              placeholder="Номер отделения"
+              required
+              name="user-branch-number"
+            />
+            <input
+              type="text"
+              class="modal-form__input"
+              placeholder="Город"
+              required
+              name="user-city"
+            />
+
+            <div class="modal-form-quantity__wrapper">
+              <div class="modal-form-quantity__wrapper--left">
+                <button type="button" class="modal-form-quantity__btn">
+                  <svg width="10px" height="10px">
+                    <use href="./images/sprite.svg#icon-dec"></use>
+                  </svg>
+                </button>
+                <input type="text" />
+                <button type="button" class="modal-form-quantity__btn">
+                  <svg width="10px" height="10px">
+                    <use href="./images/sprite.svg#icon-inc"></use>
+                  </svg>
+                </button>
+              </div>
+              <div>
+                <p class="modal-form-quantity__text">Всего к оплате:</p>
+                <p class="modal-form-quantity__price accent">0000 грн</p>
+              </div>
+            </div>
+
+            <button type="button"></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <script src="./js/menu.js" type="module"></script>
     <script src="./js/modal.js" type="module"></script>
     <script src="./js/getUp.js" type="module"></script>

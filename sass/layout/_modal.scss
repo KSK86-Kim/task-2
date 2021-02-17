@@ -1,0 +1,129 @@
+.modal {
+  position: relative;
+  width: 100%;
+
+  background-color: #ffffff;
+
+  @media screen and(max-width:1199px) {
+    padding-top: 85px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.modal-form {
+  &-close__btn {
+    position: absolute;
+    top: 43px;
+    right: 30px;
+
+    background-color: transparent;
+    border: none;
+  }
+  &__input {
+    display: block;
+    width: 100%;
+
+    font-weight: 400;
+
+    border: none;
+    background: rgba(0, 0, 0, 0.05);
+
+    &:not(:last-child) {
+      @media screen and(max-width:767px) {
+        margin-bottom: 10px;
+
+        font-size: 15px;
+        line-height: 1.33;
+      }
+      @media screen and(min-width:768px) {
+        margin-bottom: 20px;
+
+        font-size: 18px;
+        line-height: 1.11;
+      }
+    }
+    @media screen and(max-width:767px) {
+      padding-right: 34px;
+      padding-left: 34px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+    @media screen and(min-width:768px) {
+      padding-right: 25px;
+      padding-left: 25px;
+      padding-bottom: 18px;
+      padding-top: 18px;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    @media screen and(max-width:1199px) {
+      font-size: 25px;
+      line-height: 0.8;
+      position: absolute;
+      top: 40px;
+      left: 30px;
+    }
+    @media screen and(max-width:420px) {
+      width: 150px;
+    }
+    @media screen and(max-width:320px) {
+      font-size: 20px;
+      line-height: 0.8;
+    }
+    @media screen and(min-width:1200px) {
+      font-size: 30px;
+      line-height: 0.6;
+    }
+  }
+}
+
+.modal-form-quantity {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and(max-width:420px) {
+      flex-wrap: wrap;
+    }
+
+    &--left {
+      display: flex;
+
+      @media screen and(max-width:420px) {
+        margin-bottom: 10px;
+      }
+
+      & > input {
+        border: none;
+        @media screen and(max-width:767px) {
+          width: 55px;
+        }
+        @media screen and(min-width:768px) {
+          width: 60px;
+        }
+      }
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    @media screen and(max-width:767px) {
+      width: 55px;
+      height: 55px;
+    }
+    @media screen and(min-width:768px) {
+      width: 60px;
+      height: 60px;
+    }
+    & > svg {
+      fill: #000000;
+    }
+  }
+}

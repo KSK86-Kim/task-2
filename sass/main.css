@@ -120,6 +120,10 @@ svg {
   }
 }
 
+.is-hidden {
+  display: none;
+}
+
 .logo {
   display: block;
   text-transform: uppercase;
@@ -140,6 +144,29 @@ svg {
     font-size: 40px;
     line-height: 0.75;
   }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  padding: 30px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1145,5 +1172,182 @@ svg {
 .footer__item:not(:last-child) {
   margin-right: 20px;
   margin-bottom: 5px;
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    padding-top: 85px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.modal-form-close__btn {
+  position: absolute;
+  top: 43px;
+  right: 30px;
+  background-color: transparent;
+  border: none;
+}
+
+.modal-form__input {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  border: none;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (max-width: 767px) {
+  .modal-form__input:not(:last-child) {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.33;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-form__input:not(:last-child) {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal-form__input {
+    padding-right: 34px;
+    padding-left: 34px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-form__input {
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 18px;
+    padding-top: 18px;
+  }
+}
+
+.modal-form__title {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-form__title {
+    font-size: 25px;
+    line-height: 0.8;
+    position: absolute;
+    top: 40px;
+    left: 30px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .modal-form__title {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .modal-form__title {
+    font-size: 20px;
+    line-height: 0.8;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__title {
+    font-size: 30px;
+    line-height: 0.6;
+  }
+}
+
+.modal-form-quantity__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 420px) {
+  .modal-form-quantity__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.modal-form-quantity__wrapper--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 420px) {
+  .modal-form-quantity__wrapper--left {
+    margin-bottom: 10px;
+  }
+}
+
+.modal-form-quantity__wrapper--left > input {
+  border: none;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-form-quantity__wrapper--left > input {
+    width: 55px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-form-quantity__wrapper--left > input {
+    width: 60px;
+  }
+}
+
+.modal-form-quantity__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-form-quantity__btn {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-form-quantity__btn {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.modal-form-quantity__btn > svg {
+  fill: #000000;
 }
 /*# sourceMappingURL=main.css.map */

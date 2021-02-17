@@ -10,6 +10,7 @@
 // ============ components ============
 
 @import './components/logo';
+@import './components/backdrop';
 
 // ============ layout ============
 
@@ -21,3 +22,4 @@
 @import './layout/question';
 @import './layout/order';
 @import './layout/footer';
+@import './layout/modal';
