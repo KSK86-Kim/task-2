@@ -1,0 +1,36 @@
+.footer {
+  background-color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &__container {
+    @media screen and(min-width:768px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &__list {
+    display: flex;
+    @media screen and(max-width:420px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    font-weight: 400;
+
+    @media screen and(max-width:1199px) {
+      font-size: 18px;
+      line-height: 1.67;
+    }
+    @media screen and(min-width:1200px) {
+      font-size: 24px;
+      line-height: 1.25;
+    }
+
+    &:not(:last-child) {
+      margin-right: 20px;
+      margin-bottom: 5px;
+    }
+  }
+}

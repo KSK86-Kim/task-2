@@ -45,19 +45,19 @@
       max-width: 366px;
       position: absolute;
       &:nth-child(1) {
-        right: 0;
+        right: 40px;
         top: 200px;
       }
       &:nth-child(2) {
-        left: 0;
+        left: 40px;
         top: 285px;
       }
       &:nth-child(3) {
-        left: 0;
+        left: 40px;
         bottom: 200px;
       }
       &:nth-child(4) {
-        right: 0;
+        right: 40px;
         bottom: 230px;
       }
     }

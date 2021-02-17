@@ -10,7 +10,11 @@
     background: #ffffff;
     border-radius: 20px;
     overflow: hidden;
-
+    @media screen and(max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
     @media screen and (min-width: 768px) {
       width: calc(50% - 10px);
 
@@ -22,6 +26,7 @@
         margin-right: 20px;
       }
     }
+
     &-left {
       display: flex;
       justify-content: center;
@@ -138,6 +143,7 @@
     }
 
     &--link {
+      cursor: pointer;
       padding-right: 10px;
 
       font-weight: 700;
